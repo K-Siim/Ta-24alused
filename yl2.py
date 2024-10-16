@@ -1,5 +1,5 @@
 import math
- 
+
 # Taking radius input from the user
 radius = float(input("Sisesta ringi raadius "))
  
