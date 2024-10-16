@@ -1,6 +1,6 @@
-külg1 =(input ("Sisesta kolmnurga esimene külg:"))
-külg2 =(input ("Sisesta kolmnurga teine külg:"))
-külg3 =(input ("Sisesta kolmnurga kolmas külg:"))
+külg1 = float(input ("Sisesta kolmnurga esimene külg:"))
+külg2 = float(input ("Sisesta kolmnurga teine külg:"))
+külg3 = float(input ("Sisesta kolmnurga kolmas külg:"))
 if (külg1 + külg2 > külg3) and (külg1 + külg3 > külg2) and (külg2 + külg3 > külg1):
     if külg1 == külg2 == külg3:
         print("Kolmnurk on võrdkülgne.")
