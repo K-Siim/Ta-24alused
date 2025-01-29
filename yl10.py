@@ -1,12 +1,16 @@
-nimi = str(input ("Sisestage oma nimi:"))
-print('Tere', nimi)
-elukoht = str(input ("Kus te elate?:"))
-if elukoht.lower() == "saaremaal":  
-    print("Saaremaa on imeline koht elamiseks!")
-vanus = int(input("Kui vana sa oled? "))
-if vanus < 18:
-    print("Sa oled liiga noor, et autot juhtida.")
-elif vanus == 18:
-    print("Palju õnne täisealiseks saamise puhul! Nüüd saad autot juhtida.")
+# Kirjuta programm, mis küsib kasutajalt nime, tervitab teda nimepidi, küsib kasutajalt elukoha, kui elukoht on Saaremaa, siis väljastab mingi kommentaari, küsib kasutajalt vanuse, 
+# kui vanus on väiksem kui 18, siis ütleb, et kasutaja on liiga noor, et autot juhtida, kui vanus on 18, 
+# siis õnnitleb täisealiseks saamise puhul, kui kasutaja on vanem kui 18, siis ütleb, et kasutaja võib autot juhtida. (sõne - string)
+
+name = input("What is your name: ")
+print("Hello ", name)
+liv = input("where r you living: ")
+if  liv == "Saaremaa":
+    print("thats great, im also")
+age = int(input("How old are you: "))
+if age < 18:
+    print("You too yong for driving")
+elif age == 18:
+    print("congratulations on coming of age")
 else:
-    print("Sa võid autot juhtida.")
+    print("You can drive")

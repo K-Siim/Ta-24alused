@@ -1,9 +1,14 @@
-lemmikloom = str(input("Mis on sinu lemmikloom?"))
-first_letter = lemmikloom[0]
-print(first_letter)
-list = ["Kass", "Hamster", "Madu"]
-print(list)
-list.append(lemmikloom) 
-print(list)
-first_letter = lemmikloom[-1]
-print(first_letter)
+# Küsi kasutajalt lemmikloom. Väljasta selle muutuja esimene täht.
+# Koosta list, mis koosneb kolmest loomast.
+# Lisa selle listi lõppu kasutaja sisestatud lemmikloom.
+# Väljasta see lemmikloomade list.
+# Väljasta listi viimase elemendi viimane täht.
+# (sõne kui list, mitmemõõtmeline ilist - multi dimensional)
+
+pet = input("Lemmikloom: ")
+print(pet[0])
+
+pets = ["dog", "mouse", "snake"]
+pets.append(pet)
+print(pets)
+print(pets[-1][-1])

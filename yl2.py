@@ -1,14 +1,8 @@
-import math
+from math import pi
 
-# Taking radius input from the user
-radius = float(input("Sisesta ringi raadius "))
- 
-# Calculating area and circumference
-area = math.pi * radius**2
-circumference = 2 * math.pi * radius
- 
-# Displaying the results
-print(f"Ringi pindala {area}")
-print(f"Ringi Ümbermoot: {circumference}")
-
-
+var1 = int(input("Sisesta raadius: "))
+rinPin = pi*var1**2
+print("Ringi pindala: ",round(rinPin, 2))
+diam = 2*var1
+umbMdu = pi*diam
+print("Ümbermõõt on",round(umbMdu, 2))

@@ -1,7 +1,5 @@
+# Kirjuta programm, mis küsib kasutajalt failinime kujul “failinimi.ext” (ext - extension - faili laiend) 
+# ja prindib välja laiendi (“ext”). (str.split)
 
-failinimi = input("Sisesta failinimi kujul 'failinimi.ext': ")
-osad = failinimi.split(".")
-if len(osad) > 1:
-    print("Faili laiend on:", osad[-1])
-else:
-    print("Failil pole laiendit.")
+file = input('write file name .ext: ')
+print(file.split(".")[-1])

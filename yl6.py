@@ -1,10 +1,14 @@
-arv1 = int(input("Sisesta arv:"))
-arv2 = int(input("Sisesta arv:"))
-arv3 = int(input("Sisesta arv:"))
-if arv1 >= arv2 and arv1 >= arv3:
-    maximum = arv1
-elif arv2 >= arv1 and arv2 >= arv3:
-    maximum = arv2
+# Kirjuta programm, mis leiab kolmest kasutaja poolt sisestatud arvust maksimumi (ära kasuta max funktsiooni). 
+# (loogikatehted - logic operators)
+
+
+a = input("a: ")
+b = input("b: ")
+c = input("c: ")
+
+if a > b and a > c:
+    print("maximum", a)
+elif b > c:
+    print("maximum", b)
 else:
-    maximum = arv3
-print("Suurim arv on:", maximum)
+    print("maximum", c)

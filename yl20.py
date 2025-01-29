@@ -1,8 +1,12 @@
-x = int(input("Lisa korrutustabeli number: "))
-y = int(input("Lisa mitu rida soovid korrutustabelist saada: "))
-if y > 12:
-    print("The number of rows has been limited to 12.")
-    y=12
-for i in range(1, y + 1):
- result = x * i
- print(f"{x} * {i} = {result}")
+# Väljasta korduslause abil 8 korrutis arvudega 0..12 ja vorminda väljund nii:
+# 8 x 0 = 0
+# 	8 x 1 = 8
+# 	8 x 2 = 16
+# 	…
+# 	8 x 12 = 96
+# Täienda programmi nii, et kasutajalt küsitakse arv x, mille kohta korrutustabel väljastatakse
+
+x = int(input())
+
+for el in range(0, 13):
+    print(x,"*", el, "=", x * el)

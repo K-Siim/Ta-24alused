@@ -1,5 +1,7 @@
-arv = int(input ("Sisesta number:"))
-if (arv % 2) == 0:
-    print("{0} on paarisarv" .format(arv))
+# Kirjuta programm, mis ütleb, kas kasutaja poolt etteantud täisarv on paarisarv või mitte. (paarisarvu mõiste - odd/even)
+
+a = int(input("enter number "))
+if a % 2 == 0:
+    print("number is even")
 else:
-    print("{0} on paarituarv" .format(arv))
+    print("number is odd")

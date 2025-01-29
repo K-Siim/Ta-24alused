@@ -1,31 +1,21 @@
+# Kivi-paber-käärid mäng. 
+# Arvuti mõtleb välja ühe variandi - kivi, paber või käärid. Arvuti küsib kasutaja valikut. Programm ütleb, kes võitis.
+# Täienda programmi nii, et mängitakse seni, kuni kasutaja ei taha enam mängida.
+
 import random
-
-def kivi_paber_käärid():
-    valikud = ["kivi", "paber", "käärid"]
-    print("Tere tulemast mängu Kivi-Paber-Käärid!")
-    
-    while True:
-        arvuti_valik = random.choice(valikud)
-        kasutaja_valik = input("Sisesta oma valik (kivi, paber, käärid või 'Lõpp', et mäng lõpetada): ").lower()
-        
-        if kasutaja_valik == "Lõpp":
-            print("Aitäh mängimast!")
-            break
-        elif kasutaja_valik not in valikud:
-            print("Ei mõista sind! Palun vali 'kivi', 'paber' või 'käärid'.")
-            continue
-        
-        print(f"Arvuti valis: {arvuti_valik}")
-        
-        if arvuti_valik == kasutaja_valik:
-            print("Viik! Proovi uuesti.")
-        elif (kasutaja_valik == "kivi" and arvuti_valik == "käärid") or \
-             (kasutaja_valik == "paber" and arvuti_valik == "kivi") or \
-             (kasutaja_valik == "käärid" and arvuti_valik == "paber"):
-            print("Sa võitsid! Tubli töö!")
-        else:
-            print("Arvuti võitis! Proovi uuesti.")
-        
-        print()  
-
-kivi_paber_käärid()
+choices = ['paper', 'rock', 'scissors']
+while True:
+    user_choice = input("choose rock, scissors or paper: ")
+    computer_choice = random.choice(choices)
+    print('computer choose: ',computer_choice)
+    if user_choice not in choices:
+        print('Try again')
+        continue
+    if user_choice == computer_choice:
+        print('draw!')
+    elif user_choice == 'rock' and computer_choice == 'scissors' or user_choice == 'scissors' and computer_choice == 'paper' or user_choice == 'paper' and computer_choice == 'rock':
+        print('You win!')
+    else:
+        print('You lose')
+    if input('wanna play more? y or n: ').lower() == 'n':
+        break

@@ -1,8 +1,12 @@
+# Kirjuta programm, mis leiab kahest kasutaja poolt sisestatud arvust miinimumi (ära kasuta min funktsiooni). 
+# (muutuja - variable, tingimus - condition, if-lause - if statement)
 
-arv1 = float(input("Sisesta esimene arv: "))
-arv2 = float(input("Sisesta teine arv: "))
-if arv1 < arv2:
-    minimum = arv1
+a = int(input("input number: "))
+b = int(input("input number: "))
+
+if a < b:
+    print("minimal numb is:", a)
+elif a == b:
+    print("number are equal")
 else:
-    minimum = arv2
-print("Väiksem arv on:", minimum)
+    print("minimal numb is:", b)
